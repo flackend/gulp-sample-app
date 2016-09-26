@@ -2,13 +2,14 @@
 
 ## What is Gulp
 
-Gulp is a task runner. It allows you to automate development tasks:
+Gulp is a task runner. It allows you to automate development tasks. A few examples:
 
 - Convert: SASS/LESS to CSS
 - Convert: ES6 or CoffeeScript to browser-supported JavaScript
 - Optimize: minify CSS, JavaScript, HTML; optimize images
 - Lint: check code and markup for errors or style (coding standards)
 - Live reload: auto-inject CSS, refresh browser/node server
+- Tests: run TDD tests (and the like)
 
 ## How does it work
 
@@ -32,4 +33,4 @@ Create a gulpfile.js, add some tasks, and run it:
 gulp
 ```
 
-You can find recipes for your gulpfile.js by searching Google (e.g. "gulp sass") or by reading the README.md associated with gulp plugins found on npmjs.com or gulpjs.com/plugins.
+You can find recipes for your gulpfile.js by searching Google (e.g. "gulp sass") or by reading the README.md associated with gulp plugins found on [npmjs.com](https://www.npmjs.com/) or [gulpjs.com/plugins](http://gulpjs.com/plugins/).
