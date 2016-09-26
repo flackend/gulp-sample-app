@@ -1,0 +1,18 @@
+@import 'variables';
+
+body {
+  color: $text-color;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+h1 {
+  color: $red;
+  margin-bottom: 25px;
+}
+
+p {
+  cursor: pointer;
+}
+
+@import 'buttons';
