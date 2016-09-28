@@ -11,6 +11,19 @@ Gulp is a task runner. It allows you to automate development tasks. A few exampl
 - Live reload: auto-inject CSS, refresh browser/node server
 - Tests: run TDD tests (and the like)
 
+## Benefits
+
+- Automate tasks you may already doing:
+  - Converting SASS/LESS to CSS
+  - CoffeeScript to JS
+- Make other tasks more attainable:
+  - Auto-inject CSS into browser
+  - Auto-refresh browser on JS and HTML change
+- Benefits teams
+  - You commit the gulpfile.js to your repo
+  - You don't need to rely on IDE, etc for linting and transforms
+  - Consolidate tasks to a single place (transforms, testing, LiveReload/BrowserSync)
+
 ## How does it work
 
 You can easily use Gulp with any project that serves static assets (JS/CSS).
