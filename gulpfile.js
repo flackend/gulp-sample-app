@@ -77,18 +77,12 @@ gulp.task('sass', function () {
         .pipe(scsslint())
         .pipe(gulpif(env.dev, sourcemaps.init()))
         // Convert to CSS
-        .pipe(sass({
-            /**
-             * TWBS issue. Button not tall enough.
-             * @link https://github.com/twbs/bootstrap-sass/issues/409
-             */
-            precision: 10
-        }).on('error', sass.logError))
+        .pipe(sass().on('error', sass.logError))
         .pipe(postcss([
             doiuse({
-                browsers: ['> 5%', 'IE 8', 'Firefox 3.6']
+                browsers: ['> 40%']
             }),
-            autoprefixer({browsers: ['> 5%', 'IE 8', 'Firefox 3.6']}),
+            autoprefixer({browsers: ['> 40%']}),
             cssreporter({clearMessages: true})
         ]))
 
@@ -179,7 +173,7 @@ gulp.task('html', function() {
  * Watch HTML
  */
 gulp.task('html-watch', function () {
-    return gulp.watch(paths.html.all, ['html'], browserSync.reload);
+    return gulp.watch(paths.html.all, ['html']).on('change', browserSync.reload);
 });
 
 /**

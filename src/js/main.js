@@ -1,9 +1,6 @@
-const $ = require('jquery');
-const x = require('./x.js');
-
-$('p').on('click', (e) => {
-    // console.log('clicked', hat);
-    $(e.target).css('color', '#339');
-});
-
-console.log(x());
+// Require angular
+const angular = require('angular');
+// Require controllers
+require('./controllers.js');
+// Define angualr app
+angular.module('app', ['controllers']);

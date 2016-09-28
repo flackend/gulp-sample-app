@@ -46,6 +46,9 @@
     "yargs": "^5.0.0"
   },
   "dependencies": {
-    "jquery": "^3.1.0"
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "lorem-ipsum": "^1.0.3"
   }
 }
